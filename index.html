@@ -49,8 +49,11 @@
 
         /* Shared item media (image / PDF / link) — every section type supports all three */
         .item-media-img {
-            display: block; max-width: 260px; width: 100%; max-height: 170px;
-            object-fit: cover; border-radius: 10px; margin: 0.7rem 0 0.2rem;
+            /* Frame follows the image, never crops it: certificates are often A4
+               portrait, so height is driven by the picture's own aspect ratio. */
+            display: block; width: auto; height: auto;
+            max-width: min(320px, 100%); max-height: 440px;
+            object-fit: contain; border-radius: 10px; margin: 0.7rem 0 0.2rem;
         }
         .item-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.7rem; }
         .item-actions a {
@@ -294,8 +297,9 @@
 
         .project-image {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            max-height: 460px;
+            object-fit: contain;
             background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
         }
 
@@ -410,8 +414,9 @@
 
         .gallery-image {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            max-height: 460px;
+            object-fit: contain;
         }
 
         .gallery-caption {
@@ -611,7 +616,7 @@
                         </div>
                         <div class="experience-company">Aditya Birla World Academy (ABWA)</div>
                         <div class="experience-description">Studying Mathematics, Physics, Economics, and Psychology. Recognized as a top Physics student.</div>
-                        <div class="item-loc" style="font-size:.85em;opacity:.8;margin:2px 0 6px;">📍 Mumbai, India</div><img src="assets/img-0788ab0d60.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-cd5c9c95c8.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-fd3fa19fa8.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img">
+                        <div class="item-loc" style="font-size:.85em;opacity:.8;margin:2px 0 6px;">📍 Mumbai, India</div><img src="assets/img-0788ab0d60.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-cd5c9c95c8.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-fd3fa19fa8.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-797e1f0488.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-2c8c61b2c1.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img"><img src="assets/img-2fcea9711c.png" alt="Cambridge A-Levels" loading="lazy" class="item-media-img">
                     </div></section><div class="section-divider"></div><section id="research-publications"><h2>Research &amp; Publications</h2><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">IJFMR</span>
@@ -675,17 +680,53 @@
                         </div>
                         <div class="experience-company">Atlas Summer School</div>
                         <div class="experience-description">Attended business management program.</div>
-                        
+                        <img src="assets/img-0b4763360e.png" alt="Participant" loading="lazy" class="item-media-img">
                     </div></section><div class="section-divider"></div><section id="athletics"><h2>Athletics</h2><div class="experience-item">
+                        <img src="assets/img-bbdfe2f65b.png" alt="Les Elfes Camps Snowsports Certificate" style="max-width:min(320px,100%);max-height:440px;width:auto;height:auto;border-radius:8px;object-fit:contain;display:block;margin-bottom:10px;">
+                        <h3>Les Elfes Camps Snowsports Certificate</h3>
+                        <p></p>
                         
-                        <h3>Cricket</h3>
-                        <p>Competed at ISSO (Inter-School Sports Organization) level.</p>
+                        
+                    </div><div class="experience-item">
+                        <img src="assets/img-2ed83ed8ea.png" alt="Les Elfes International Mountain Biking Course" style="max-width:min(320px,100%);max-height:440px;width:auto;height:auto;border-radius:8px;object-fit:contain;display:block;margin-bottom:10px;">
+                        <h3>Les Elfes International Mountain Biking Course</h3>
+                        <p></p>
+                        
+                        
+                    </div><div class="experience-item">
+                        <img src="assets/img-e8448a988e.png" alt="AYA Introduction To Dinghy Sailing" style="max-width:min(320px,100%);max-height:440px;width:auto;height:auto;border-radius:8px;object-fit:contain;display:block;margin-bottom:10px;">
+                        <h3>AYA Introduction To Dinghy Sailing</h3>
+                        <p></p>
+                        
+                        
+                    </div><div class="experience-item">
+                        <img src="assets/img-bc41d8d2e5.png" alt="WhiteHat Jr Certified Game Developer" style="max-width:min(320px,100%);max-height:440px;width:auto;height:auto;border-radius:8px;object-fit:contain;display:block;margin-bottom:10px;">
+                        <h3>WhiteHat Jr Certified Game Developer</h3>
+                        <p></p>
+                        
+                        
+                    </div><div class="experience-item">
+                        <img src="assets/img-819f197447.png" alt="CAMPK12 CERTIFIED CODER Level 3" style="max-width:min(320px,100%);max-height:440px;width:auto;height:auto;border-radius:8px;object-fit:contain;display:block;margin-bottom:10px;">
+                        <h3>CAMPK12 CERTIFIED CODER Level 3</h3>
+                        <p></p>
+                        
+                        <img src="assets/img-d9ebab3cf8.png" alt="CAMPK12 CERTIFIED CODER Level 3" loading="lazy" class="item-media-img"><img src="assets/img-51101e5a37.png" alt="CAMPK12 CERTIFIED CODER Level 3" loading="lazy" class="item-media-img">
+                    </div><div class="experience-item">
+                        <img src="assets/img-a47902939e.png" alt="World Robot Olympiad" style="max-width:min(320px,100%);max-height:440px;width:auto;height:auto;border-radius:8px;object-fit:contain;display:block;margin-bottom:10px;">
+                        <h3>World Robot Olympiad</h3>
+                        <p></p>
                         
                         
                     </div><div class="experience-item">
                         
                         <h3>Tennis</h3>
                         <p>Competitive player.</p>
+                        
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>Cricket</h3>
+                        <p>Competed at ISSO (Inter-School Sports Organization) level.</p>
                         
                         
                     </div></section><div class="section-divider"></div><section id="certifications"><h2>Certifications</h2><div class="experience-item">
